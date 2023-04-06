@@ -2,11 +2,32 @@ public class Hogwarts {
     private String name;
     private String surname;
     private String faculty;
+    private int thePowerOfMagic;
+    private int transgressions;
 
-    public Hogwarts(String name, String surname, String faculty) {
+    public Hogwarts(String name, String surname, String faculty, int thePowerOfMagic, int transgressions) {
         this.name = name;
         this.surname = surname;
-        this.faculty = String.valueOf(faculty);
+        this.faculty = faculty;
+        this.thePowerOfMagic = thePowerOfMagic;
+        this.transgressions = transgressions;
+
+    }
+
+    public int getThePowerOfMagic() {
+        return thePowerOfMagic;
+    }
+
+    public void setThePowerOfMagic(int thePowerOfMagic) {
+        this.thePowerOfMagic = thePowerOfMagic;
+    }
+
+    public int getTransgressions() {
+        return transgressions;
+    }
+
+    public void setTransgressions(int transgressions) {
+        this.transgressions = transgressions;
     }
 
     public String getName() {
